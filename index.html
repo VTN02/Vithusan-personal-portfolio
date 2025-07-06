@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vithusan Vijayakumar - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class'
+      }
+    </script>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="min-h-screen transition-colors duration-300 dark:bg-gray-900 dark:text-white bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <nav id="header" class="fixed top-0 w-full z-50 backdrop-blur-md bg-white/10 dark:bg-gray-900/10 border-b border-white/20 px-6 md:px-16 lg:px-32">
+        <div class="container mx-auto px-0 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+                    Vithusan
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="capitalize hover:text-purple-400 transition-colors duration-200">Home</a>
+                    <a href="#about" class="capitalize hover:text-purple-400 transition-colors duration-200">About</a>
+                    <a href="#skills" class="capitalize hover:text-purple-400 transition-colors duration-200">Skills</a>
+                    <a href="#projects" class="capitalize hover:text-purple-400 transition-colors duration-200">Projects</a>
+                    <a href="#contact" class="capitalize hover:text-purple-400 transition-colors duration-200">Contact</a>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">
+                        <i class="fas fa-sun dark:hidden"></i>
+                        <i class="fas fa-moon hidden dark:block"></i>
+                    </button>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-button" class="md:hidden p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">
+                        <i class="fas fa-bars" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 space-y-2">
+                <a href="#home" class="block w-full text-left py-2 capitalize hover:text-purple-400 transition-colors duration-200">Home</a>
+                <a href="#about" class="block w-full text-left py-2 capitalize hover:text-purple-400 transition-colors duration-200">About</a>
+                <a href="#skills" class="block w-full text-left py-2 capitalize hover:text-purple-400 transition-colors duration-200">Skills</a>
+                <a href="#projects" class="block w-full text-left py-2 capitalize hover:text-purple-400 transition-colors duration-200">Projects</a>
+                <a href="#contact" class="block w-full text-left py-2 capitalize hover:text-purple-400 transition-colors duration-200">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20">
+        <div class="w-full flex flex-col-reverse md:flex-row items-center justify-center gap-12 text-center md:text-left px-8 md:px-32 lg:px-48">
+            <div class="flex-1 order-2 md:order-1">
+                <div class="animate-fade-in">
+                    <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                        Hi, I'm <span class="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">Vithusan Vijayakumar</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl text-gray-300 mb-4">Undergraduate Student at SLIIT</p>
+                    <p class="text-lg text-gray-400 mb-12 max-w-2xl mx-auto md:mx-0">
+                        Passionate about creating innovative solutions through code, AI, and design.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <a href="#projects" class="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 inline-flex items-center">
+                            View My Works <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="#contact" class="border border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white px-8 py-3 rounded-full transition-all duration-300 inline-flex items-center">
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-shrink-0 flex justify-center items-center w-full md:w-auto order-1 md:order-2">
+                <img src="/images/VTN - Copy01.PNG" 
+                     alt="Vithusan Vijayakumar" 
+                     class="w-full max-w-sm md:max-w-lg h-auto shadow-2xl object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+                About Me
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-semibold">Vijayakumar Vithusan</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        I'm an undergraduate student at Sri Lanka Institute of Information Technology (SLIIT) pursuing my degree in Information Technology.
+                        I have a strong passion for web development and problem-solving.
+                    </p>
+                    <p class="text-gray-300 leading-relaxed">
+                        When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying outdoor activities.
+                        I believe in continuous learning and pushing boundaries to create impactful solutions.
+                    </p>
+                    
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-envelope text-purple-400"></i>
+                            <span>vijayakumarvithusan2912@gmail.com</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-phone text-purple-400"></i>
+                            <span>077 453 4056</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-graduation-cap text-purple-400"></i>
+                            <span>BSc (Hons) in Information Technology, SLIIT</span>
+                        </div>
+                    </div>
+                    
+                    <a href="/assets/VITHUSAN VIJAYAKUMAR.pdf" class="inline-flex items-center bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white px-6 py-2 rounded-full">
+                        <i class="fas fa-download mr-2"></i>
+                        Download CV
+                    </a>
+                </div>
+                
+                <div class="flex justify-center md:justify-end mt-8 md:mt-0 md:ml-12">
+                    <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=400&fit=crop" 
+                         alt="Coding workspace" 
+                         class="rounded-lg shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-6 bg-gradient-to-b from-transparent to-gray-200">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+                My Skills
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Programming Skills -->
+                <div class="bg-white shadow border border-gray-200 hover:bg-gray-50 transition-all duration-300 transform hover:scale-105 rounded-lg p-6 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-code text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Programming</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 text-sm bg-purple-500/20 text-purple-300 rounded-full border border-purple-500/30"><i class="fas fa-html5 mr-1"></i>HTML</span>
+                        <span class="px-3 py-1 text-sm bg-purple-500/20 text-purple-300 rounded-full border border-purple-500/30"><i class="fab fa-css3-alt mr-1"></i>CSS</span>
+                        <span class="px-3 py-1 text-sm bg-purple-500/20 text-purple-300 rounded-full border border-purple-500/30"><i class="fab fa-js-square mr-1"></i>JavaScript</span>
+                        <span class="px-3 py-1 text-sm bg-purple-500/20 text-purple-300 rounded-full border border-purple-500/30"><i class="fab fa-react mr-1"></i>React</span>
+                        <span class="px-3 py-1 text-sm bg-purple-500/20 text-purple-300 rounded-full border border-purple-500/30"><i class="fab fa-java mr-1"></i>Java</span>
+                        <span class="px-3 py-1 text-sm bg-purple-500/20 text-purple-300 rounded-full border border-purple-500/30"><i class="fas fa-c mr-1"></i>C</span>
+                        <span class="px-3 py-1 text-sm bg-purple-500/20 text-purple-300 rounded-full border border-purple-500/30"><i class="fas fa-leaf mr-1"></i>Spring Boot</span>
+                        <span class="px-3 py-1 text-sm bg-purple-500/20 text-purple-300 rounded-full border border-purple-500/30"><i class="fab fa-python mr-1"></i>Python</span>
+                        <span class="px-3 py-1 text-sm bg-purple-500/20 text-purple-300 rounded-full border border-purple-500/30"><i class="fas fa-database mr-1"></i>SQL</span>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="bg-white shadow border border-gray-200 hover:bg-gray-50 transition-all duration-300 transform hover:scale-105 rounded-lg p-6 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-tools text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Tools</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 text-xs bg-blue-500/20 text-blue-300 rounded-full border border-blue-500/30"><i class="fas fa-code mr-1"></i>VS Code</span>
+                        <span class="px-3 py-1 text-xs bg-blue-500/20 text-blue-300 rounded-full border border-blue-500/30"><i class="fas fa-lightbulb mr-1"></i>IntelliJ</span>
+                        <span class="px-3 py-1 text-xs bg-blue-500/20 text-blue-300 rounded-full border border-blue-500/30"><i class="fas fa-flask mr-1"></i>Google Colab</span>
+                        <span class="px-3 py-1 text-xs bg-blue-500/20 text-blue-300 rounded-full border border-blue-500/30"><i class="fab fa-figma mr-1"></i>Figma</span>
+                    </div>
+                </div>
+
+                <!-- AI & Machine Learning -->
+                <div class="bg-white shadow border border-gray-200 hover:bg-gray-50 transition-all duration-300 transform hover:scale-105 rounded-lg p-6 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-robot text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">AI & ML</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 text-sm bg-cyan-500/20 text-cyan-300 rounded-full border border-cyan-500/30"><i class="fas fa-brain mr-1"></i>Machine Learning</span>
+                        <span class="px-3 py-1 text-sm bg-cyan-500/20 text-cyan-300 rounded-full border border-cyan-500/30"><i class="fab fa- mr-1"></i>ChatGPT</span>
+                        <span class="px-3 py-1 text-sm bg-cyan-500/20 text-cyan-300 rounded-full border border-cyan-500/30"><i class="fas fa-robot mr-1"></i>Copilot</span>
+                    </div>
+                </div>
+
+                <!-- UI/UX Design -->
+                <div class="bg-white shadow border border-gray-200 hover:bg-gray-50 transition-all duration-300 transform hover:scale-105 rounded-lg p-6 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-r from-pink-500 to-rose-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-palette text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Design</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 text-sm bg-pink-500/20 text-pink-300 rounded-full border border-pink-500/30"><i class="fas fa-pencil-ruler mr-1"></i>UI/UX Design</span>
+                        <span class="px-3 py-1 text-sm bg-pink-500/20 text-pink-300 rounded-full border border-pink-500/30"><i class="fas fa-users mr-1"></i>User Research</span>
+                        <span class="px-3 py-1 text-sm bg-pink-500/20 text-pink-300 rounded-full border border-pink-500/30"><i class="fas fa-project-diagram mr-1"></i>Prototyping</span>
+                        <span class="px-3 py-1 text-sm bg-pink-500/20 text-pink-300 rounded-full border border-pink-500/30"><i class="fas fa-vector-square mr-1"></i>Wireframing</span>
+                    </div>
+                </div>
+
+                <!-- Others -->
+                <div class="bg-white shadow border border-gray-200 hover:bg-gray-50 transition-all duration-300 transform hover:scale-105 rounded-lg p-6 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-r from-gray-500 to-gray-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-cogs text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Others</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 text-sm bg-gray-500/20 text-gray-300 rounded-full border border-gray-500/30"><i class="fas fa-sitemap mr-1"></i>Data Structures</span>
+                        <span class="px-3 py-1 text-sm bg-gray-500/20 text-gray-300 rounded-full border border-gray-500/30"><i class="fas fa-random mr-1"></i>Algorithms</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6 bg-gray-100">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+                My Projects
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1: Portfolio Website -->
+                <div class="bg-white shadow border border-gray-200 hover:bg-gray-50 transition-all duration-300 transform hover:scale-105 cursor-pointer group rounded-lg overflow-hidden dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <div class="relative overflow-hidden">
+                        <img src="/images/portfolio01.png" 
+                             alt="Portfolio Website Home Page Screenshot" 
+                             class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <div class="text-white">
+                                <p class="text-sm">A modern, responsive personal portfolio website built with Tailwind CSS and JavaScript.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Personal Portfolio Website</h3>
+                        <p class="text-gray-400 text-sm mb-4">This website showcases my skills, projects, and contact information. It features a dark/light theme toggle, responsive design, and interactive UI elements for a professional online presence.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 text-xs bg-purple-500/20 text-purple-300 rounded border border-purple-500/30">HTML</span>
+                            <span class="px-2 py-1 text-xs bg-purple-500/20 text-purple-300 rounded border border-purple-500/30">Tailwind CSS</span>
+                            <span class="px-2 py-1 text-xs bg-purple-500/20 text-purple-300 rounded border border-purple-500/30">JavaScript</span>
+                        </div>
+                        <a href="https://github.com/yourusername/portfolio_vtn" target="_blank" class="inline-block mt-2 px-5 py-2 bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-full font-medium shadow hover:from-purple-600 hover:to-blue-600 transition">View on GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white shadow border border-gray-200 hover:bg-gray-50 transition-all duration-300 transform hover:scale-105 cursor-pointer group rounded-lg overflow-hidden dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <div class="relative overflow-hidden">
+                        <img src="/images/portfolio02.png" 
+                             alt="Bike Rental and Management System" 
+                             class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <div class="text-white">
+                                <p class="text-sm">A convenient and efficient solution for campus bike-sharing operations.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Task Management App</h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            This is a comprehensive Bike Rental and Management System designed for campus use, 
+                            featuring a web-based admin dashboard that 
+                            allows administrators to efficiently manage all aspects of the bike rental service. 
+                            The system provides complete control over bike inventory, rental requests, driver management, 
+                            user feedback, ride tracking, and user account management.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 text-xs bg-purple-500/20 text-purple-300 rounded border border-purple-500/30">HTML</span>
+                            <span class="px-2 py-1 text-xs bg-purple-500/20 text-purple-300 rounded border border-purple-500/30">CSS</span>
+                            <span class="px-2 py-1 text-xs bg-purple-500/20 text-purple-300 rounded border border-purple-500/30">JavaScript</span>
+                            <span class="px-2 py-1 text-xs bg-purple-500/20 text-purple-300 rounded border border-purple-500/30">Spring Boot</span>
+
+                        </div>
+                        <a href="https://github.com/VTN02/bikerentalsystem" target="_blank" class="inline-block mt-2 px-5 py-2 bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-full font-medium shadow hover:from-purple-600 hover:to-blue-600 transition">View on GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <!-- <div class="bg-white shadow border border-gray-200 hover:bg-gray-50 transition-all duration-300 transform hover:scale-105 cursor-pointer group rounded-lg overflow-hidden dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=500&h=300&fit=crop" 
+                             alt="Data Analysis Dashboard" 
+                             class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                            <div class="text-white">
+                                <p class="text-sm">Interactive dashboard for data visualization and analysis</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Data Analysis Dashboard</h3>
+                        <p class="text-gray-400 text-sm mb-4">Interactive dashboard for data visualization and analysis</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 text-xs bg-purple-500/20 text-purple-300 rounded border border-purple-500/30">Python</span>
+                            <span class="px-2 py-1 text-xs bg-purple-500/20 text-purple-300 rounded border border-purple-500/30">JavaScript</span>
+                        </div>
+                        <a href="https://github.com/yourusername/data-analysis-dashboard" target="_blank" class="inline-block mt-2 px-5 py-2 bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-full font-medium shadow hover:from-purple-600 hover:to-blue-600 transition">View on GitHub</a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="py-16 bg-gray-50 dark:bg-gray-900">
+      <div class="max-w-xl mx-auto px-4">
+        <h2 class="text-3xl font-extrabold text-center mb-8 text-gray-900 dark:text-white">Certificates</h2>
+        <div class="flex justify-center">
+          <div class="relative group bg-white shadow border border-gray-200 rounded-lg p-0 dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center w-full max-w-lg overflow-hidden transition-all duration-300">
+            <img src="/images/ai_ml_certificate.png" alt="Artificial intelligence and machine learning" class="w-full h-64 object-cover rounded-t-md border-b border-gray-300 dark:border-gray-600 shadow">
+            <!-- Certificate title always visible -->
+            <h3 class="text-2xl font-bold text-center text-gray-900 dark:text-white mt-4 mb-2 px-4">AI/ML – SLIIT Institute of Information Technology</h3>
+            <!-- Overlay: show on hover -->
+            <div class="absolute inset-0 flex flex-col justify-center items-center text-left px-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 bg-gradient-to-br from-black/90 via-gray-900/95 to-black/90 rounded-lg border border-blue-500 shadow-2xl backdrop-blur-sm">
+              <h3 class="text-2xl font-bold text-white mb-4 w-full">AI/ML – SLIIT Institute of Information Technology</h3>
+              <p class="text-gray-100 text-base font-medium mb-4 max-w-md w-full">Currently pursuing a course in Artificial Intelligence and Machine Learning, gaining practical knowledge in data analysis, model training, supervised and unsupervised learning, and real-world AI applications. This course enhances my skills in Python programming, machine learning algorithms, and AI problem-solving techniques.</p>
+            </div>
+            <!-- Certificate meta: only visible when not hovered -->
+            <div class="w-full p-6 flex flex-col items-center group-hover:opacity-0 transition-opacity duration-300">
+              <span class="text-red-500 font-semibold mb-1">Certificate update soon!</span>
+              <p class="text-gray-500 dark:text-gray-300 text-sm mb-0">SLIIT, 2025</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 bg-gradient-to-b from-purple-900/10 to-transparent">
+        <div class="container mx-auto max-w-4xl">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+                    Contact Me
+                </h2>
+                <p class="text-xl text-gray-300 mb-2">Get in Touch</p>
+                <p class="text-gray-400">Feel free to reach out for collaborations or just a friendly hello.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-6">Let's Connect</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-envelope text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">Email</p>
+                                    <a href="mailto:vijayakumarvithusan2912@gmail.com" class="text-gray-300 text-sm hover:underline">vijayakumarvithusan2912@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-phone text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">Phone</p>
+                                    <a href="tel:0774534056" class="text-gray-300 text-sm hover:underline">077 453 4056</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div>
+                        <h4 class="text-lg font-medium mb-4">Follow Me</h4>
+                        <div class="flex space-x-4">
+                            <a href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQH-hGvJFCJagQAAAZfhipRInXacU8dxpT8XXWs59l4g3ggLkQ-paKmGj3ittrXr_-awerw6w5cUZ1Opl5OvHlrA9N6VIgpFEB00-D4LdcwI_zvyYo9ZrWSO2F3xGTYZXckK5Q0=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fvithusan-vijayakumar" class="w-12 h-12 bg-white/5 backdrop-blur-md border border-white/10 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 hover:text-blue-400">
+                                <i class="fab fa-linkedin-in text-xl"></i>
+                            </a>
+                            <a href="https://github.com/VTN02" class="w-12 h-12 bg-white/5 backdrop-blur-md border border-white/10 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 hover:text-gray-400">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                            <a href="https://www.instagram.com/vithusan_2v" class="w-12 h-12 bg-white/5 backdrop-blur-md border border-white/10 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 hover:text-pink-400">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                            <a href="https://www.facebook.com/share/19L7LWg3B5/" class="w-12 h-12 bg-white/5 backdrop-blur-md border border-white/10 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 hover:text-blue-500">
+                                <i class="fab fa-facebook-f text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a href="https://wa.me/94774534056?text=Hi%20Vithusan,%20I'm%20interested%20in..." 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="inline-flex items-center px-6 py-3 bg-green-500 hover:bg-green-600 text-white rounded-full transition-colors duration-300">
+                            <span class="mr-2"><i class="fab fa-whatsapp"></i></span>
+                            Message on WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-white shadow border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
+                    <div class="p-6">
+                        <form id="contact-form" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium mb-2">Name</label>
+                                <input type="text" id="name" name="name" required 
+                                       class="w-full bg-white border border-gray-300 text-gray-800 placeholder:text-gray-400 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500 dark:bg-gray-900 dark:border-gray-700 dark:text-gray-100 dark:placeholder:text-gray-400">
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                                <input type="email" id="email" name="email" required 
+                                       class="w-full bg-white border border-gray-300 text-gray-800 placeholder:text-gray-400 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500 dark:bg-gray-900 dark:border-gray-700 dark:text-gray-100 dark:placeholder:text-gray-400" 
+                                       placeholder="your.email@example.com">
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-sm font-medium mb-2">Message</label>
+                                <textarea id="message" name="message" required rows="4"
+                                          class="w-full bg-white border border-gray-300 text-gray-800 placeholder:text-gray-400 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500 dark:bg-gray-900 dark:border-gray-700 dark:text-gray-100 dark:placeholder:text-gray-400" 
+                                          placeholder="Tell me about your project or just say hello!"></textarea>
+                            </div>
+                            
+                            <button type="submit" 
+                                    class="w-full bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white px-6 py-3 rounded-md transition-all duration-300">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 border-t border-white/10">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-400">© 2025 Vithusan Vijayakumar. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./js/theme.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
